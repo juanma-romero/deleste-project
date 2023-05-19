@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { AR, BR } from 'country-flag-icons/react/3x2';
 import Product from "@/components/Product";
-import HelloWorld from './hola.mdx';
+
 
 
 
@@ -13,7 +13,7 @@ export default function Home() {
         <div>       
           <Link href='/br'> <BR title="brasil flag" className="w-10 rounded-lg"/> </Link>
           <span>Idioma</span>
-          <HelloWorld />
+          
         </div>
         <div>
           <Link href='/arg'> <AR title="Argentina flag" className="w-10 rounded-lg"/> </Link> 
