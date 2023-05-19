@@ -1,7 +1,10 @@
 
+
 const HomeBrasil = () => {
   return (
-    <div>Home Brasil</div>
+    <div>
+      holas brasil
+    </div>
   )
 }
 

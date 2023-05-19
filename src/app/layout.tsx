@@ -9,6 +9,9 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Deleste',
   description: 'dicas para suas compras inteligentes en Cidade de leste',
+  icons: {
+    icon: '/favicon-16x16.png',
+  },
 }
 
 export default function RootLayout({
@@ -18,6 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
+      <head>
+      
+      </head>  
       <body className={inter.className} >
         <Navbar />  
         {children}
