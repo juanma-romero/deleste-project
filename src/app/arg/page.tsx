@@ -2,7 +2,7 @@
 import Link from "next/link"
 import { BiGift, BiMap, BiShoppingBag } from "react-icons/bi"
 import { IoMdGitCompare } from "react-icons/io"
-import YouTube from 'react-youtube';
+
 
 const HomeArgentina = () => {
     return (
@@ -23,14 +23,9 @@ const HomeArgentina = () => {
           <Link href='/arg/mapa' className="mt-4"> <BiMap className="text-2xl"/> </Link>
         <br />
         <h2>Mira el video de nuestro canal!!</h2>
-        <YouTube
-      videoId='BqN_lth7BHg'
-      className="my-6 mx-auto w-full overflow-x-hidden"
-      title="Video de compras en Ciudad del Este"
-      
-    />
+       
+        
       </div>
-      
       </>
     )
   }
