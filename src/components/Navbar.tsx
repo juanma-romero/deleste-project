@@ -10,16 +10,19 @@ import Link from 'next/link'
 const montserrat = Montserrat_Alternates({ subsets: ['latin'],weight: ['700'] })
 
 const people = [
-  { name: 'Portugues' },
-  { name: 'Español' }  
+  { name: 'Idioma Portugues' },
+  { name: 'Idioma Español' }  
 ]
 
 const Navbar = () => {
   const [selected, setSelected] = useState(people[0])
   return (
+    <>
     <div className='flex justify-between items-center pt-6 px-6'>
-      <GoThreeBars className='cursor-pointer text-4xl rounded-lg bg-[#404040] py-2 px-3 shadow-md hover:bg-[#517373]'/>
+      
       <h1 className={montserrat.className}><Link href='/'>Deleste.Shop</Link></h1>
+      <GoThreeBars className='cursor-pointer text-4xl rounded-lg bg-[#404040] py-2 px-3 shadow-md hover:bg-[#517373]'/>
+    </div> 
       <Listbox value={selected} onChange={setSelected}>
         <div className="">
           <Listbox.Button className="relative w-full cursor-default rounded-lg bg-[#404040] hover:bg-[#517373] py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
@@ -70,7 +73,8 @@ const Navbar = () => {
           </Transition>
         </div>
       </Listbox>
-    </div>
+    
+    </>
   )
 }
 

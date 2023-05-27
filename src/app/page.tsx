@@ -1,4 +1,5 @@
 'use client'
+import ListadoLinks from "./ListadoLinks"
 
 export default function Home() {  
   
@@ -6,7 +7,8 @@ export default function Home() {
     <main className="flex flex-col">      
         <h1 className="text-center mt-6 text-2xl text-[#F2C063]">
           Dicas e info <br />/ Recomendaciones
-        </h1>          
+        </h1>
+        <ListadoLinks />        
     </main>     
   )
 }

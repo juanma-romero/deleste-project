@@ -3,21 +3,29 @@
 @tailwind utilities;
 
 body {
-    background:  #333333;
-  
+    background:  #333333;  
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     color: white;
   }
 
 h1 {
-  color: #D98004;
+  color: #fff;
   font-size: 1.5rem;
-  line-height: 2rem/* 36px */;
+  line-height: 2rem;
   font-weight: 700;
 }
+
+/*
+media query for mobile devices h1 font size
+*/
+@media (max-width: 430px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
 
 
 
