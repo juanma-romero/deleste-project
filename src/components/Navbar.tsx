@@ -17,16 +17,16 @@ const people = [
 const Navbar = () => {
   const [selected, setSelected] = useState(people[0])
   return (
-    <div className='flex justify-between h-12 pt-6 px-6 text-3xl font-bold'>
-      <GoThreeBars className='cursor-pointer'/>
-      <Link href='/'><h1 className={montserrat.className}>Deleste.Shop</h1></Link>
+    <div className='flex justify-between items-center pt-6 px-6'>
+      <GoThreeBars className='cursor-pointer text-4xl rounded-lg bg-[#404040] py-2 px-3 shadow-md hover:bg-[#517373]'/>
+      <h1 className={montserrat.className}><Link href='/'>Deleste.Shop</Link></h1>
       <Listbox value={selected} onChange={setSelected}>
-        <div className="relative mt-1">
-          <Listbox.Button className="relative w-full cursor-default rounded-lg bg-gray-400 py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
+        <div className="">
+          <Listbox.Button className="relative w-full cursor-default rounded-lg bg-[#404040] hover:bg-[#517373] py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
             <span className="block truncate">{selected.name}</span>
             <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
               <BsChevronContract
-                className="h-5 w-5 text-gray-400"
+                className="h-5 w-5 text-[#fff]"
                 aria-hidden="true"
               />
             </span>
