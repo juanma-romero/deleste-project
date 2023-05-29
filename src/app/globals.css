@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 body {
-    background:  #333333;  
+    background:  #0F1626;  
     height: 100vh;
     display: flex;
     flex-direction: column;    
     color: white;
   }
 
+p {
+  color:#fff;
+}
+
 h1 {
-  color: #fff;
+  color: #D98004;
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;

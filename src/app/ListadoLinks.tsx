@@ -5,9 +5,7 @@ const ListadoLinks = () => {
   return (
     <div>
         <Linkes />
-        <Linkes />
-        <Linkes />
-        <Linkes />
+        
     </div>
   )
 }
