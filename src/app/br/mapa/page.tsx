@@ -1,7 +1,12 @@
+import Link from "next/link"
 
 const MapaBrasil = () => {
     return (
-      <div>MapaBrasil</div>
+      <div>
+        MapaBrasil
+        <Link href="/" ><p>Home</p></Link>  
+
+        </div>
     )
   }
   

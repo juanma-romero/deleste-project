@@ -1,5 +1,5 @@
 'use client'
-import { AR, BR } from 'country-flag-icons/react/3x2';
+
 import { useState, Fragment } from 'react'
 import { Listbox, Transition } from '@headlessui/react'
 import {BsChevronContract,BsCheckLg} from 'react-icons/bs'
@@ -10,7 +10,7 @@ import Link from 'next/link'
 const montserrat = Montserrat_Alternates({ subsets: ['latin'],weight: ['700'] })
 
 const idioma = [
-  { name: 'Idioma Brasilero' },
+  { name: 'Idioma Brazil' },
   { name: 'Idioma Argentina' }  
 ]
 

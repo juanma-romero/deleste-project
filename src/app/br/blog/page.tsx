@@ -1,7 +1,11 @@
+import Link from "next/link"
 
 const BlogBrasil = () => {
     return (
-      <div>Blog Brasil</div>
+      <div>
+        Blog Brasil
+          <Link href="/" ><p>Home</p></Link>  
+      </div>
     )
   }
   
