@@ -1,33 +1,14 @@
 'use client'
-import Link from "next/link"
-import { BiGift, BiMap, BiShoppingBag } from "react-icons/bi"
-import { IoMdGitCompare } from "react-icons/io"
+import ListadoLinks from "../ListadoLinks"
 
-
-const HomeArgentina = () => {
-    return (
-      <>
-      <div className="w-10/12 mx-auto mt-6">
-        <h1>Toda la información para tus compras en Ciudad del Este</h1>
-        <br />
-        <p>Conseguí los mejores precios</p>
-          <Link href='/arg/oferta' className="mt-4"> <BiGift className="text-2xl"/> </Link>
-        <br />
-        <p>Comprá en los lugares mas seguros</p>
-          <Link href='/arg/shoppings' className="mt-4"> <BiShoppingBag className="text-2xl"/> </Link>
-        <br />
-        <p>Compará precios y reseñas</p>
-          <Link href='/arg/compara' className="mt-4"> <IoMdGitCompare className="text-2xl"/> </Link>
-        <br />
-        <h2>Te mostramos como llegar</h2>
-          <Link href='/arg/mapa' className="mt-4"> <BiMap className="text-2xl"/> </Link>
-        <br />
-        <h2>Mira el video de nuestro canal!!</h2>
-       
-        
-      </div>
-      </>
-    )
-  }
+export default function Home() {  
   
-  export default HomeArgentina
+  return (
+    <main className="flex flex-col">      
+        <h1 className="text-center mt-6 text-xl text-[#F2C063]">
+        Toda la info <br />para tus compras en<br />Ciudad del Este
+        </h1>
+        <ListadoLinks />        
+    </main>     
+  )
+}
