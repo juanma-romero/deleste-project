@@ -21,15 +21,15 @@ const Navbar = () => {
     <div className='flex justify-between items-center pt-6 px-6'>
       
       <h1 className={montserrat.className}><Link href='/'>Deleste.Shop</Link></h1>
-      <GoThreeBars className='cursor-pointer text-4xl rounded-lg py-2 px-3 shadow-md hover:bg-[#517373]'/>
+      <GoThreeBars className='cursor-pointer text-5xl rounded-lg py-2 px-3 shadow-md hover:bg-[#517373]'/>
     </div> 
     <Listbox value={selected} onChange={setSelected}> 
-      <div className="mt-6 ml-[30%] sm:ml-[45%]">
+      <div className="mt-4 ml-[30%] sm:ml-[45%]">
         <Listbox.Button className="relative  w-[10rem] cursor-default rounded-lg bg-[#203359] hover:bg-[#517373] py-2 pr-5 shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm">
-            <span className="block truncate">{selected.name}</span>
-            <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
+            <span className="text-[#94A3B8] text-sm block truncate">{selected.name}</span>
+            <span className=" pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
               <BsChevronContract
-                className="h-5 w-5 text-[#fff]"
+                className="h-5 w-5 text-[#94A3B8]"
                 aria-hidden="true"
               />
             </span>
