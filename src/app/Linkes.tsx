@@ -37,7 +37,7 @@ const Linkes = () => {
     <div className='flex  flex-col sm:items-center'>        
         {dato.map(
             (dato) => {
-                return <div className='flex justify-around rounded-lg bg-[#131929] m-3 hover:shadow-xl cursor-pointer sm:w-1/2 sm:mx-6'>
+                return <div className='flex justify-around rounded-lg bg-[#131929] m-3 hover:shadow-xl cursor-pointer sm:w-1/2 sm:mx-6' key={dato.id} >
                             <Image key={dato.id} src={dato.imagen} alt={dato.tituloLink+' imagen'} width={80} height={100}/>
                             <p key={dato.id} className='text-[#0487D9] self-center'>{dato.tituloLink} </p> 
                             <button><Link href={dato.linkPagina}> Ir</Link></button>
