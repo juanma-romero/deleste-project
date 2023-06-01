@@ -26,7 +26,7 @@ let dato=[
     {
         id: 4,
         tituloLink: 'Compara precios',
-        imagen: '/icons8-compare-50.png',
+        imagen: '/icons8-average-price-80.png',
         linkPagina: '/br/compara'
     },
 
