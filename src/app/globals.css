@@ -4,10 +4,11 @@
 
 body {
     background:  #0F1626;  
-    height: 100vh;
+    
     display: flex;
     flex-direction: column;    
     color: white;
+    
   }
 
 p {
@@ -15,6 +16,12 @@ p {
 }
 
 h1 {
+  color: #F2C063;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  font-weight: 700;
+}
+#logo {
   color: #D98004;
   font-size: 2rem;
   line-height: 2.3rem;
@@ -27,6 +34,10 @@ media query for mobile devices h1 font size
 @media (max-width: 430px) {
   h1 {
     font-size: 1.2rem;
+  }
+  #mapaOverview {
+    width: 100%;
+    height: 100%;
   }
 }
 

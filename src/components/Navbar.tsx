@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     
       <div className='flex justify-between items-center pt-6 px-6'>      
-        <h1 className={montserrat.className}><Link href='/'>Deleste.Shop</Link></h1>
+        <p className={montserrat.className} id='logo'><Link href='/'>Deleste.Shop</Link></p>
         {/*
         <Box sx={{ minWidth: 80 }} >
           <FormControl fullWidth>
