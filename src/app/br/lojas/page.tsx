@@ -1,12 +1,19 @@
 import Link from "next/link"
+import Loja from "./Loja"
 
 const Lojas = () => {
     return (
-      <div>
-        Lojas
-        <Link href="/" ><p>Home</p></Link>  
+      <>    
+        <h1>Los shoppings y comercios mas importantes y seguros</h1>
+        <p>En Ciudad del Este hay mas de 1000 comercios, pero los mas importantes y seguros son los que se encuentran en los shoppings.</p>  
+        <ul>
+          {/* Sacar listado de compras paraguai o crear uno yo */}
+          <li><Loja></Loja></li>
+          <li><Loja></Loja></li>
+          <li><Loja></Loja></li>
+        </ul>
+      </>
 
-        </div>
     )
   }
   
