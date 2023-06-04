@@ -10,6 +10,7 @@ import FormControl from '@mui/material/FormControl'
 import Select, { SelectChangeEvent } from '@mui/material/Select'
 import { useState } from 'react'
 import { AR, BR } from 'country-flag-icons/react/1x1'
+import GetData from './GetData'
 
 
 const montserrat = Montserrat_Alternates({ subsets: ['latin'],weight: ['700'] })
@@ -25,6 +26,8 @@ const Navbar = () => {
     
       <div className='flex justify-between items-center pt-6 px-6'>      
         <p className={montserrat.className} id='logo'><Link href='/'>Deleste.Shop</Link></p>
+        {/* @ts-expect-error Async Server Component */}
+        <GetData />
         {/*
         <Box sx={{ minWidth: 80 }} >
           <FormControl fullWidth>

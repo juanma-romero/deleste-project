@@ -41,9 +41,9 @@ export default function MediosTransporte() {
   })
 
   return (
-    <div className="w-full max-w-md px-2 py-16 sm:px-0">
+    <div className=" px-2 py-16 sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl bg-blue-900/20 p-1">
+        <Tab.List className="flex w-96 space-x-1 rounded-xl bg-blue-900/20 p-1">
           {Object.keys(categories).map((category) => (
             <Tab
               key={category}
@@ -57,11 +57,12 @@ export default function MediosTransporte() {
                 )
               }
             >
+              
               {category}
             </Tab>
           ))}
         </Tab.List>
-        <Tab.Panels className="mt-2">
+        <Tab.Panels className="w-full mt-2">
           {Object.values(categories).map((posts, idx) => (
             <Tab.Panel
               key={idx}
@@ -75,8 +76,9 @@ export default function MediosTransporte() {
                   <li
                     key={post.id}
                     className="relative rounded-md p-3 hover:bg-gray-100"
-                  >
-                    <h3 className="text-sm font-medium leading-5">
+                  > 
+                    
+                    <h3 className="text-sm font-medium leading-5 text-blue-500">
                       {post.title}
                     </h3>
 
@@ -106,21 +108,4 @@ export default function MediosTransporte() {
   )
 }
 
-{/* 
-<h2 className="">En Avion </h2>
-          <h3>Aeropuerto</h3>
-          <h3>Translado</h3>
-          <h3>Aerolineas</h3>
-          <h3>Precios</h3>
-        <h2 className="">En Auto</h2>
-          <h3>distancias</h3>
-          <h3>peajes</h3>
-          <h3>combustible</h3>
-          <h3>rutas</h3>
-        <h2>En Omnibus</h2>
-          <h3>distancias</h3>
-          <h3>empresas</h3>
-          <h3>horarios</h3>
-          <h3>precios</h3>
-          <h3>terminal</h3>  
-*/}
+
