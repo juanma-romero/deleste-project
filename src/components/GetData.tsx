@@ -13,7 +13,7 @@ async function getPeso() {
 }
  
 async function getRealGuara() {
-  const res = await fetch('http://economia.awesomeapi.com.br/json/last/BRL-PYG', { next: { revalidate: 3600 } });
+  const res = await fetch('https://economia.awesomeapi.com.br/json/last/BRL-PYG', { next: { revalidate: 3600 } });
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
  
