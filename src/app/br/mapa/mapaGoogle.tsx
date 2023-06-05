@@ -7,7 +7,7 @@ const Map: React.FC = () => {
   return (
     <LoadScriptNext googleMapsApiKey={`${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}`}>
       <GoogleMap
-        mapContainerClassName='h-[567px] w-[567px] rounded-xl mx-auto mt-12  '
+        mapContainerClassName='h-[300px] w-[300px] tab:h-[420px] tab:w-[420px] md:h-[567px] md:w-[567px] rounded-xl mx-auto mt-12  '
         mapTypeId='satellite'
         center={{ lat: -25.510827 , lng: -54.611091 }}
         zoom={16}

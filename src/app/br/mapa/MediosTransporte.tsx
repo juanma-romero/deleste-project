@@ -11,30 +11,28 @@ export default function MediosTransporte() {
     Avion: [
       {
         id: 1,
-        title: 'Precios',
-        date: '5h ago',
-        commentCount: 5,
-        shareCount: 2,
+        title: 'Viajes en avión',
+        linki: 'https://www.kayak.com.br/',
+        precio_promedio: 155,
+        
         icon: <BsAirplane />
       }
     ],
     Omnibus: [
       {
-        id: 1,
-        title: 'Is tech making coffee better or worse?',
-        date: 'Jan 7',
-        commentCount: 29,
-        shareCount: 16,
+        id: 2,
+        title: 'Viajes en Omnibus',
+        linki: 'https://www.buson.com.br/',
+        precio_promedio: 109,
         icon: <BsBusFront />
       }
     ],
     Automobil: [
       {
-        id: 1,
-        title: 'Ask Me Anything: 10 answers to your questions about coffee',
-        date: '2d ago',
-        commentCount: 9,
-        shareCount: 5,
+        id: 3,
+        title: 'Viajes en Automobil',
+        linki: 'rutas',
+        precio_promedio: 89,
         icon: <BsCarFront />
       }
     ],
@@ -56,8 +54,7 @@ export default function MediosTransporte() {
                     : 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
                 )
               }
-            >
-              
+            >              
               {category}
             </Tab>
           ))}
@@ -83,11 +80,11 @@ export default function MediosTransporte() {
                     </h3>
 
                     <ul className="mt-1 flex space-x-1 text-xs font-normal leading-4 text-gray-500">
-                      <li>{post.date}</li>
+                      <li>{post.linki}</li>
                       <li>&middot;</li>
-                      <li>{post.commentCount} comments</li>
+                      <li>Reais ${post.precio_promedio} </li>
                       <li>&middot;</li>
-                      <li>{post.shareCount} shares</li>
+                      <li>{post.icon} </li>
                     </ul>
 
                     <a

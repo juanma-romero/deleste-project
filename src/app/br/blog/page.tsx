@@ -1,12 +1,9 @@
-import Link from "next/link"
-
-const BlogBrasil = () => {
-    return (
-      <div>
-        Blog Brasil
-          <Link href="/" ><p>Home</p></Link>  
-      </div>
-    )
-  }
-  
-  export default BlogBrasil
+import Post1 from './impu-segu-pagoP2.mdx'
+import Post2 from './omnibusP3.mdx'
+ 
+export default function Page() {
+  return <>
+    <Post1/>
+    <Post2/>
+    </>
+}

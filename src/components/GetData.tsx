@@ -31,7 +31,7 @@ export default async function Page() {
   const data1 = await getPeso()
   //const data2 = await getRealGuara()
   
-  return  <div>
+  return  <div className="hidden tab:block">
             <div className="flex flex-col">
               <p>valor dolar blue</p>
               <p>{data1.blue.value_avg}</p>
